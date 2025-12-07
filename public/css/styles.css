@@ -1,0 +1,372 @@
+/* ESTILO GENERAL DEL BODY con degradado + sombra */
+body {
+    font-family: Arial, sans-serif;
+
+    /* Degradado suave de fondo */
+    background: linear-gradient(180deg, #f7f7f7, #e9ecf3);
+
+    /* Alineación general */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Sombra interior suave (efecto 3D del fondo) */
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.12);
+
+    margin: 0;
+    padding: 20px;
+}
+
+/* TÍTULOS H1 con sombra y 3D */
+h1 {
+    text-align: center;
+    color: #000;
+
+    /* Sombra sutil para efecto relieve */
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+
+    /* Fondo ligero con borde 3D opcional */
+    background: linear-gradient(90deg, #ffffff, #f0f3ff);
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* TÍTULOS H2 con sombra y realce 3D */
+h2 {
+    text-align: center;
+    color: red;
+
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(90deg, #fffafa, #ffecec);
+    padding: 10px 18px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 10px rgba(255, 0, 0, 0.25),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+/* TÍTULOS H3 estilo azul con efecto suavizado */
+h3 {
+    text-align: center;
+    color: blue;
+
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(90deg, #eef3ff, #dfe8ff);
+    padding: 8px 16px;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 255, 0.25),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+
+/* FORMULARIO con efecto 3D, sombra y degradado */
+form {
+    background: linear-gradient(180deg, #ffffff, #f3f6ff); /* Degradado suave */
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 320px;
+
+    /* Bordes estilo 3D */
+    border: 2px solid #d0d0d0;
+
+    /* Sombras exteriores + interior (3D) */
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.25),
+        0 10px 30px rgba(0, 0, 0, 0.18),
+        inset 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.espaciado {
+    margin-top: 20px;
+}
+
+/* LABEL mejorado */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    color: #333;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1); /* sutil 3D */
+}
+
+/* INPUT con bordes 3D */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+
+    border: 1px solid #b7b7b7;
+    border-radius: 6px;
+    background: #ffffff;
+
+    /* Sombra interior (para aspecto 3D) */
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.05);
+
+    transition: 0.2s;
+}
+
+/* Input al hacer foco (mejora visual) */
+input:focus {
+    border-color: #4b6aff;
+    box-shadow:
+        0 0 6px rgba(75, 106, 255, 0.6),
+        inset 0 2px 4px rgba(0, 0, 0, 0.12);
+    outline: none;
+}
+
+/* BOTÓN con degradado + 3D */
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #007bff, #0056d6);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* Bordes y sombras 3D */
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.25),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+
+    transition: 0.2s ease-in-out;
+}
+
+/* HOVER DEL BOTÓN: sube un poco y se ilumina */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.3),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Efecto al presionar el botón */
+button:active {
+    transform: translateY(1px);
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px rgba(0,0,0,0.4);
+}
+
+
+/* Estilo cuando el mouse pasa sobre el botón */
+button:hover {
+	background: #0056b3; /* Azul más oscuro al hacer hover */
+}
+
+/* Estilo del cuadro donde se muestra el resultado */
+.resultado {
+	margin-top: 20px;     /* Separación del formulario */
+	background: #d1ffd1;  /* Fondo verde claro */
+	padding: 15px;        /* Espaciado interno */
+	border-radius: 8px;   /* Bordes redondeados */
+	color: #064d06;       /* Verde oscuro, texto del resultado */
+	font-weight: bold;    /* Negrita */
+}
+
+/* Tabla */
+.tabla {
+    width: 90%;                 /* La tabla ocupará el 90% del ancho del contenedor */
+    margin-top: 20px;           /* Espacio arriba */
+    border-collapse: collapse;  /* Junta los bordes */
+    background: white;          /* Fondo blanco */
+    font-size: 16px;            /* Tamaño de letra */
+
+    /* Bordes 3D */
+    border: 2px solid #c9c9c9;
+    border-radius: 12px;
+
+    /* Sombras alrededor (efecto 3D) */
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.25),     /* Sombra suave */
+        0 10px 25px rgba(0, 0, 0, 0.18),    /* Sombra profunda */
+        inset 0 0 10px rgba(0, 0, 0, 0.08); /* Sombra interior suave */
+
+    overflow: hidden;            /* Respeta bordes redondeados */
+}
+
+/* Encabezados (th) con degradado */
+.tabla th {
+    background: linear-gradient(135deg, #007bff, #0056d6); 
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+
+    /* Borde inferior más oscuro = efecto 3D */
+    border-bottom: 3px solid #003c8f;
+}
+
+/* Celdas normales */
+.tabla td {
+    padding: 10px;
+    border-bottom: 1px solid #d3d3d3;
+
+    /* Ligero relieve interior */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Filas pares */
+.tabla tr:nth-child(even) {
+    background: #f4f7ff; /* Azul grisáceo claro */
+}
+
+/* Hover con efecto 3D */
+.tabla tr:hover td {
+    background: #dbe6ff;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.15);
+    transition: 0.2s ease-in-out;
+}
+
+/* BOTÓN AZUL (para Editar y Volver) */
+.btn-azul {
+    background: linear-gradient(135deg, #007bff, #0056d6);
+    color: white !important;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.25),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-azul:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.3),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* BOTÓN ROJO (para Eliminar) */
+.btn-rojo {
+    background: linear-gradient(135deg, #ff3b3b, #c40000);
+    color: white !important;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.25),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-rojo:hover {
+    background: #b30000;
+    transform: translateY(-2px);
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.3),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* SIDE BAR */
+        .sidebar {
+            width: 230px;
+            background: linear-gradient(180deg, #2b2b2b, #1a1a1a);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 30px;
+            box-shadow: 4px 0 12px rgba(0,0,0,0.3);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px 20px;
+            color: #ddd;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: #444;
+            color: white;
+            padding-left: 30px;
+        }
+
+        /* Ajuste del contenido */
+        .contenido {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        /* Tarjetas */
+        .tarjetas-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 260px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow:
+                0 6px 15px rgba(0,0,0,0.25),
+                inset 0 0 8px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .btn-card {
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #007bff, #0056d6);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.25),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-card:hover {
+            background: #0056b3;
+        }
